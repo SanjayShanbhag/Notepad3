@@ -1,0 +1,140 @@
+html,body{
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+#loading-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 10);
+    z-index: 500;
+}
+#loading-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -130px;
+    z-index: 510;
+}
+.back{
+    background-image: url('../images/back.jpg');
+    width: 100%;
+    height: 100%;
+    
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0px !important;
+    margin: 0 auto; 
+    bottom: 0px;
+}
+.content{
+    min-height: 100%;
+    min-width: 100%;
+    background: rgba(0,230,118,0.7);
+    padding: 0px !important;
+    margin: 0 auto; 
+    bottom: 0px;
+}
+.loginbox{
+    min-width: 100%;
+    min-height: 300px;
+    background-color: #FAFAFA;
+    box-shadow: 2px 2px 2px #EDE7F6;
+    padding: 10px;
+}
+.topleft{
+    height: 150px;
+    width: 100%;
+    background-image: url('../images/tl.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.innertopleft{
+    width: 100%;
+    height: 100%;
+    background: rgba(33,33,33,0.1);
+    padding: 0px !important;
+    margin: 0 auto; 
+    bottom: 0px;
+}
+.card{
+    background-color: #FAFAFA;
+    box-shadow: 2px 2px 2px #EDE7F6;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+.fab {
+   width: 60px;
+   height: 60px;
+   background-color: red;
+   border-radius: 50%;
+   box-shadow: 0 6px 10px 0 #666;
+   transition: all 0.1s ease-in-out;
+ 
+   font-size: 30px;
+   color: white;
+   text-align: center;
+   line-height: 60px;
+ 
+   position: fixed;
+   right: 50px;
+   bottom: 50px;
+}
+ 
+.fab:hover {
+   box-shadow: 0 6px 14px 0 #666;
+   transform: scale(1.05);
+}

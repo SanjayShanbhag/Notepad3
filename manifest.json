@@ -1,0 +1,19 @@
+{
+	"name": "Notepad3 - A Note Taking App",
+	"short_name": "Notepad3",
+	"start_url": "index.php",
+	"icons": [
+		{
+		"src": "favicon.png",
+		"sizes": "192x192",
+		"type": "image/png"
+		},
+		{
+		"src": "favicon.png",
+		"sizes": "512x512",
+		"type": "image/png"
+		}],
+	"background_color": "#DD2C00",
+	"display": "standalone",
+	"theme_color": "#DD2C00"
+}
